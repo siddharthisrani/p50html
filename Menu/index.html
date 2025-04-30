@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    
+      
+    <div id="select" onclick="select()">  
+      <p id="showtext">Select Menu</p>
+      <i class="fa-solid fa-circle-chevron-down"></i>
+    </div>
+
+    <div id="dropdown">
+           
+          <ul id="listitem">
+              <li onclick="jump('Facebook', './images/facebook.png','https://www.facebook.com/')">
+                <img src="./images/facebook.png" alt="">
+                <p>Facebook</p>    
+            </li>
+            <li onclick="jump('Youtube')">
+                <img src="./images/youtube.png" alt="">
+                <p>Youtube</p>    
+            </li><li onclick="jump('Instagram')">
+                <img src="./images/instagram.jpeg" alt="">
+                <p>Instagram</p>    
+            </li><li onclick="jump('Twitter')">
+                <img src="./images/twitter.jpeg" alt="">
+                <p>Twitter</p>    
+            </li><li onclick="jump('Linkdin')">
+                <img src="./images/linkdin.png" alt="">
+                <p>Linkdin</p>    
+            </li>
+          </ul>
+
+    </div>
+     
+
+    <script src="script.js"></script>
+</body>
+</html>
