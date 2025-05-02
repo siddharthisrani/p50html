@@ -1,0 +1,54 @@
+body {
+    margin: 0;
+    background: #000000;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    overflow: hidden;
+  }
+
+  #pacman {
+    width: 60px;
+    height: 60px;
+    z-index: 2;
+    position: absolute;
+    left: 100px;
+  }
+
+  #dotsContainer {
+    position: relative;
+    flex: 1;
+    height: 100%;
+  }
+
+  .dot {
+    width: 12px;
+    height: 12px;
+    background: pink;
+    border-radius: 50%;
+    position: absolute;
+    top: 49%;
+    animation: moveDot 4s linear infinite;
+  }
+
+
+  .dot:nth-child(1) { animation-delay: 0s; }
+  .dot:nth-child(2) { animation-delay: 0.4s; }
+  .dot:nth-child(3) { animation-delay: 0.8s; }
+  .dot:nth-child(4) { animation-delay: 1.2s; }
+  .dot:nth-child(5) { animation-delay: 1.6s; }
+
+  @keyframes moveDot {
+    0% {
+      left: 100%;
+      opacity: 1;
+    }
+    80% {
+      opacity: 1;
+    }
+    100% {
+      left: 110px;
+      opacity: 0;
+    }
+  }
